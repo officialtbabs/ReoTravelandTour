@@ -1,0 +1,167 @@
+.about-service {
+    width: 100vw;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+    gap: 15vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.about-us-image {
+    opacity: 0;
+    margin-left: 5%;
+
+    &.show-about-us {
+        animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;
+        animation-delay: 0s;
+    }
+
+    img {
+        width: 30vw;
+        height: 30vw;
+    }
+}
+
+.about-content {
+    margin-right: 10%;
+
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 50px;
+        font-family: 'Mukta', sans-serif;
+        display: inline-flex;
+        line-height: 1em;
+        border-bottom: 4px solid rgba(235,33,40,0.8); 
+        margin-bottom: 5px;
+    }
+}
+
+// h1 {
+//     font-size: 50px;
+//     font-family: 'Mukta', sans-serif;
+//     display: inline-flex;
+//     line-height: 1em;
+//     border-bottom: 4px solid rgba(235,33,40,0.8);  
+// }
+
+.service-container {
+    margin-top: 50px;
+    background-color: rgba(226,232,240, 0.6);
+    width: 95%;
+
+    h1{
+        font-size: 50px;
+        font-family: 'Mukta', sans-serif;
+        display: inline-flex;
+        line-height: 1em;
+        border-bottom: 4px solid rgba(235,33,40,0.8); 
+        margin-bottom: 5px;
+    }
+    
+    p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .service-content {
+        display: flex;
+        gap: 3vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 10%;
+        margin-bottom: 20vw;
+    }
+}
+
+.tour-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-items: start;
+
+    .tour-cutout {
+        font-size: 27vw;
+        font-weight: 800;
+        line-height: 0px;
+        text-align: start;
+        position: relative;
+        margin-left: -2% !important;
+        margin-top: -30vw !important;
+        color: white;
+        font-family: 'Freehand', cursive;
+        opacity: 0;
+
+        &.show-tour-cutout {
+            animation: 2s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) tourismSlideDown;
+            animation-delay: 0s;
+        }
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;                    
+        transform: translateX(30px);                
+    }                
+    100% {                    
+        opacity: 1;                    
+        transform: translateX(0);                
+    }            
+}  
+
+@keyframes tourismSlideDown {
+    0% {
+        opacity: 0;                    
+        transform: translateY(20vw);              
+    }                
+    100% {                    
+        opacity: 1;                    
+        transform: translateY(23vw);               
+    }            
+} 
+
+@media (max-width: 981px) {
+    .about-container {
+        display: block !important;
+    }
+
+    .about-us-image {
+        margin-left: unset;
+
+        img {
+            width: 300px !important;
+            height: 300px !important;
+        }
+    }
+
+    .about-content {
+        margin-right: unset !important;
+    
+        p {
+            font-size: 12px !important;
+            text-align: center !important;
+            padding: 5vw !important;
+        }
+    
+        h1{
+            margin: 0px  ;
+            text-align: center !important;
+        }
+    }
+
+    .service-container {
+        .service-content {
+            gap: 10vw !important;
+        }
+    }
+}

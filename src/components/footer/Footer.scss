@@ -1,0 +1,15 @@
+.footer-container {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    background-color: #171717;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+
+    p {
+        color: rgba(226,232,240, 0.8);
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
