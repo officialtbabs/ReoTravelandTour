@@ -6,11 +6,11 @@ class Header extends React.Component {
     nav_timer: any
 
     componentDidMount(): void {
-        // this.styles = getComputedStyle(document.getElementById("header")!);
-        // console.log(this.styles.getPropertyValue("display"))
-        // this.nav_timer = setTimeout(() => {
-        //     document.getElementById("header")?.classList.add("show-header");
-        // }, 10000)
+        this.styles = getComputedStyle(document.getElementById("header")!);
+        console.log(this.styles.getPropertyValue("display"))
+        this.nav_timer = setTimeout(() => {
+            document.getElementById("header")?.classList.add("show-header");
+        }, 1000)
     }
 
     componentWillUnmount(): void {
@@ -25,7 +25,7 @@ class Header extends React.Component {
                         <div className="details-container">
                             <div>
                                 <span><img src={require("../../assets/images/telephone-call.png")} alt="" /> </span>
-                                <span><a href="https://wa.link/e67pg4" target="_blank" rel="noopener noreferrer">+(234)7069952496</a> <a href="https://wa.link/qnuycu" target="_blank" rel="noopener noreferrer">+(234)9134458065,</a>  <a href="https://wa.link/58mulw" target="_blank" rel="noopener noreferrer">+(44)7867882541</a></span>
+                                <span><a href="tel:+(234)7069952496" target="_blank" rel="noopener noreferrer">+(234)7069952496</a> <a href="https://wa.link/qnuycu" target="_blank" rel="noopener noreferrer">+(234)9134458065,</a>  <a href="https://wa.link/58mulw" target="_blank" rel="noopener noreferrer">+(44)7867882541</a></span>
                             </div>
                             <div>
                                 <span><img src={require("../../assets/images/email.png")} alt="" /> </span>

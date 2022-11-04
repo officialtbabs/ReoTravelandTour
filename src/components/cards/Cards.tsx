@@ -27,9 +27,8 @@ class Cards extends React.Component<any, any> {
                         <div className="text-back">
                             <div>
                                 <h1 className="text-back-header">{ this.props.name }</h1>
-                                <p className="text-back-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed nunc vel lectus
-                                commodo aliquet ac vel velit.<br /><br />Vivamus cursus a nunc vitae blandit. Duis
-                                quam justo, sagittis a fringilla quis, facilisis eu mauris.
+                                <p className="text-back-desc">
+                                    { this.props.desc }
                                 </p>
                             </div>
                         </div>

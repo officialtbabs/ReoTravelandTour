@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     background-position: right;
     display: grid;
-    z-index: -1;
     font-family: 'Poppins', sans-serif;
 
     .Blur {
@@ -31,7 +30,7 @@
         }
 
         .mask-content {
-            position: relative;
+            height: 20vw;
             width: 100%;
             display: flex;
             justify-items: start;
@@ -41,10 +40,10 @@
                 font-size: 27vw;
                 font-weight: 800;
                 line-height: 0px;
+                margin: 0px;
                 text-align: start;
-                position: relative;
                 margin-left: -2% !important;
-                margin-top: -38vw !important;
+                margin-top: 13vw !important;
                 color: white;
                 font-family: 'Mukta', sans-serif;
                 opacity: 0;
@@ -96,11 +95,11 @@
 @keyframes slideUp {
     0% {
         opacity: 0;                    
-        transform: translateY(46vw);              
+        transform: translateY(23vw);              
     }                
     100% {                    
         opacity: 1;                    
-        transform: translateY(23vw);              
+        transform: translateY(0);              
     }            
 }
 
@@ -155,7 +154,7 @@
 
         &:hover {
             border-color: #22c55e;
-            color: blue;
+            color: #22c55e;
         }
     }
 }
@@ -169,7 +168,8 @@
         margin-top: 2vw;
         display: flex;
         justify-content: left;
-    
+        z-index: 10;
+
         .more-info-button {
             width: 200px;
             height: 50px;
@@ -180,8 +180,11 @@
             font-size: 16px;
             color: #4ade80;
             font-weight: 700;
-            cursor: pointer;
-
+        
+            &:hover {
+                border-color: #22c55e;
+                color: #22c55e;
+            }
             
         }
     }
@@ -190,6 +193,7 @@
         margin-top: 2vw;
         display: flex;
         justify-content: left;
+        z-index: 10;
     
         .contact-button {
             width: 200px;
@@ -205,14 +209,8 @@
             &:hover {
                 background-color: #22c55e;
             }
-            
         }
     }
-}
-
-.more-info-button:hover {
-    border-color: #22c55e;
-    color: blue;
 }
 
 // .contact-button-container {
