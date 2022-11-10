@@ -3,11 +3,6 @@ import Cards from "../../components/cards/Cards";
 import './About.scss'
 
 class About extends React.Component {
-
-    componentDidMount(): void {
-        document.getElementById('about-image')?.classList.add('show-about-us');
-        document.getElementById('tour-cutout')?.classList.add('show-tour-cutout');
-    }
     
     render() {
         return (
@@ -33,7 +28,7 @@ class About extends React.Component {
                         <Cards name="Event Planning" image="event-planning.jpg" desc="Worry less about leaving a long lasting impression through memorable occasion, we got you covered! We offer the following event planning services: Company bonding, Weekend vacation, Anniversary and Birthday Get away."/>
                         <Cards name="Group Packages" image="group.jpg" desc="We offer local and international group packages to explore new culture, network, engage and most importantly have a good time out with family and friends."/>
                     </div>
-                    <div className="tour-container ">
+                    <div className="tour-container">
                         <div id="tour-cutout" className="tour-cutout">
                             Tourism
                         </div>

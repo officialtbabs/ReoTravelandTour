@@ -3,19 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
-import Home from './pages/home/Home';
-import About from './pages/about/About';
-import Contact from './pages/contact/Contact';
+// import { createHashRouter } from 'react-router-dom';
+// import Home from './pages/home/Home';
+// import About from './pages/about/About';
+// import Contact from './pages/contact/Contact';
 
-const routes = createHashRouter([
-  {path: "/", element: <App />, children: [
-    {path: "/home", element: <Home />},
-    {path: "/about", element: <About />},
-    {path: "/contact", element: <Contact />}
-  ]}
+// const routes = createHashRouter([
+//   {path: "/", element: <App />, children: [
+//     {path: "/home", element: <Home />},
+//     {path: "/about", element: <About />},
+//     {path: "/contact", element: <Contact />}
+//   ]}
 
-]);
+// ]);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

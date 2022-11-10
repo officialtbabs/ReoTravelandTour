@@ -32,17 +32,9 @@
 .quote-subscribe {
     width: 95%;
     background-color: #000dff;
+    border-radius: 10px 0px 0px 10px;
 
     .quote-content {
-
-        .header {
-            font-size: 30vw;
-            text-align: center;
-            line-height: 0px;
-            color: rgba(226,232,240, 0.8);
-            margin-bottom: 5vw;
-            font-family: sans-serif;
-        }
 
         .quote-desc {
             color: white;
@@ -53,12 +45,22 @@
         }
 
         .quote-author {
+            margin-bottom: 20px;
             font-family: 'Freehand', cursive;
             font-size: 16px;
             color: white;
 
         }
     }
+}
+
+.review-header {
+    font-size: 30vw;
+    text-align: center;
+    line-height: 0px;
+    color: rgba(226,232,240, 0.8);
+    margin-bottom: 5vw;
+    font-family: sans-serif;
 }
 
 .subscribe-form-content {
@@ -91,12 +93,12 @@
     overflow: clip;
 
     .subscribe-cutout {
-        font-size: 27vw;
+        font-size: 21.7vw;
         font-weight: 800;
         line-height: 1em;
         text-align: start;
         position: relative;
-        // margin-left: -2% !important;
+        margin: 2;
         margin-top: 1vw !important;
         color: black;
         font-family: 'Mukta', sans-serif;

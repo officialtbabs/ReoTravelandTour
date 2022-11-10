@@ -81,33 +81,34 @@
         margin: 0 10%;
         margin-bottom: 20vw;
     }
-}
 
-.tour-container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-items: start;
-
-    .tour-cutout {
-        font-size: 27vw;
-        font-weight: 800;
-        line-height: 0px;
-        margin: 0px;
-        text-align: start;
-        position: relative;
-        margin-left: -2% !important;
-        margin-top: -30vw !important;
-        color: white;
-        font-family: 'Freehand', cursive;
-        opacity: 0;
-
-        &.show-tour-cutout {
-            animation: 2s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) tourismSlideDown;
-            animation-delay: 0s;
+    .tour-container {
+        width: 100%;
+        display: flex;
+        justify-items: start;
+    
+        .tour-cutout {
+            font-size: 27vw;
+            font-weight: 800;
+            line-height: 0px;
+            margin: 0px;
+            text-align: start;
+            position: relative;
+            margin-left: -2% !important;
+            margin-top: -13vw !important;
+            color: white;
+            font-family: 'Freehand', cursive;
+            opacity: 0;
+    
+            &.show-tour-cutout {
+                animation: 2s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) tourismSlideDown;
+                animation-delay: 0s;
+            }
         }
     }
 }
+
+
 
 @keyframes slideRight {
     0% {
@@ -123,11 +124,11 @@
 @keyframes tourismSlideDown {
     0% {
         opacity: 0;                    
-        transform: translateY(20vw);              
+        transform: translateY(0vw);              
     }                
     100% {                    
         opacity: 1;                    
-        transform: translateY(23vw);               
+        transform: translateY(6vw);               
     }            
 } 
 

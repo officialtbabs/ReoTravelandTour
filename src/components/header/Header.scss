@@ -69,7 +69,7 @@
 }
 
 .show-header {
-    top: 0px;
+    top: 0px !important;
 }
 
 .contact-bar {
@@ -93,5 +93,13 @@
     img {
         width: 60px;
         height: 29px;
+    }
+}
+
+@media (max-width: 981px) {
+    .header-container {
+        position: relative !important;
+        top: 0px !important;
+        transition: unset !important;
     }
 }

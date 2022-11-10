@@ -2,20 +2,7 @@ import React from "react";
 import "./Header.scss"
 
 class Header extends React.Component {
-    styles: CSSStyleDeclaration = {} as CSSStyleDeclaration;
-    nav_timer: any
-
-    componentDidMount(): void {
-        this.styles = getComputedStyle(document.getElementById("header")!);
-        console.log(this.styles.getPropertyValue("display"))
-        this.nav_timer = setTimeout(() => {
-            document.getElementById("header")?.classList.add("show-header");
-        }, 1000)
-    }
-
-    componentWillUnmount(): void {
-        clearTimeout(this.nav_timer);
-    }
+    
 
     render() {
         return (
