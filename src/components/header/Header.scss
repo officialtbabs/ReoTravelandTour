@@ -60,9 +60,6 @@
        }
     }
 
-    &.nav-content {
-    }
-
     img {
         width: 10px
     }
@@ -87,6 +84,51 @@
     height: 65%;
     background-color: white;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) ;
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .nav-content {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    input[type=checkbox] {
+        display: none;
+    } 
+    
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+    }
+
+    .nav-links a {
+        color: #000000;
+    }
+
+    .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .menu li:hover {
+        background-color: rgba(128,128,128, 0.3);
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    .menu li {
+        padding: 5px 14px;
+    }
 }
 
 .logo {
@@ -101,5 +143,36 @@
         position: relative !important;
         top: 0px !important;
         transition: unset !important;
+    }
+    
+    .nav-bar {
+        .menu { 
+            display:none;
+            position: absolute;
+            background-color:#fff;
+            right: 0;
+            left: 0;
+            font-size: 12px;
+            text-align: center;
+            padding: 16px 0;
+        }
+
+        .menu li:hover {
+            display: inline-block;
+            background-color:rgba(128,128,128, 0.3);
+            transition: 0.3s ease;
+        }
+
+        .menu li + li {
+            margin-top: 12px;
+        }
+
+        input[type=checkbox]:checked ~ .menu{
+            display: block;
+        }
+
+        .hamburger {
+            display: block;
+        }
     }
 }
