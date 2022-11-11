@@ -17,7 +17,7 @@ class About extends React.Component {
                     </div>
                 </div>
 
-                <div className="service-container">
+                <div className="service-container" id="services">
                     <h1>What we do?</h1>
                     <p>Our services spans across the following</p>
                     <div className="service-content">
