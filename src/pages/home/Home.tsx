@@ -17,7 +17,7 @@ class Home extends React.Component {
                             <p className="welcome-desc-2">Birthing travel dreams!</p>
                             <div className="contact-about">
                                 <div className="more-info-container">
-                                    <Link to="#info" smooth>
+                                    <Link to="#about" smooth>
                                         <button className="more-info-button">
                                                 More Info ...
                                         </button>

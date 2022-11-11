@@ -14,7 +14,6 @@
         grid-template-columns: auto;
 
         .welcome-container {
-            // width: 100vw;
             height: 100vh;
             display: grid;
             align-content: center;
@@ -24,8 +23,6 @@
                 max-width: 1080px;
                 margin-left: auto;
                 margin-right: auto;
-                // overflow: clip;
-                // height: 100%;
             }
         }
 
@@ -45,7 +42,7 @@
                 margin-top: 13vw !important;
                 color: white;
                 font-family: 'Mukta', sans-serif;
-                // opacity: 0;
+                opacity: 0;
 
                 &.show-mask-cutout {
                     animation: 2s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideUp;
@@ -88,17 +85,6 @@
         transform: translateY(0);              
     }            
 }
-
-// @keyframes slideDown {
-//     0% {
-//         opacity: 0;                    
-//         transform: translateY(0);              
-//     }                
-//     100% {                    
-//         opacity: 1;                    
-//         transform: translateY(23vw);              
-//     }            
-// } 
 
 .welcome-text {
     margin-left: 3vw;
@@ -198,21 +184,3 @@
         }
     }
 }
-
-// .contact-button-container {
-//     margin-top: 40px;
-//     display: flex;
-//     justify-content: left;
-
-//     .contact-button {
-//         width: 200px;
-//         height: 50px;
-//         background-color: #4ade80;
-//         border: 0px;
-//         border-radius: 5px;
-//         font-size: 16px;
-//         color: white;
-//         font-weight: 700;
-//     }
-// }
-

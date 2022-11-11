@@ -6,7 +6,7 @@ class About extends React.Component {
     
     render() {
         return (
-            <div className="about-service" id="info">
+            <div className="about-service" id="about">
                 <div className="about-container">
                     <div id="about-image" className="about-us-image">
                         <img src={require('../../assets/images/about-us.gif')} alt="" />

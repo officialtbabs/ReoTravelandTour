@@ -26,16 +26,16 @@ class App extends React.Component{
     const subscribeCutoutCont = document.getElementById('subscribe-cutout')?.parentElement;
     const header = document.getElementById('header');
 
-    if (!document.getElementById('mask-image')?.classList.contains('show-mask-cutout') && maskImage && maskImage.getBoundingClientRect().top+10 < window.outerHeight && window.outerWidth  > 981) {
-      // document.getElementById('mask-image')?.classList.add('show-mask-cutout');
+    if (!document.getElementById('mask-image')?.classList.contains('show-mask-cutout') && maskImage && maskImage.getBoundingClientRect().top < window.outerHeight && window.outerWidth < 981) {
+      document.getElementById('mask-image')?.classList.add('show-mask-cutout');
     }
-    if (!document.getElementById('about-image')?.classList.contains('show-about-us') && aboutImageCont && aboutImageCont.getBoundingClientRect().top < window.outerHeight && window.outerWidth  > 981) {
+    if (!document.getElementById('about-image')?.classList.contains('show-about-us') && aboutImageCont && aboutImageCont.getBoundingClientRect().top < window.outerHeight && window.outerWidth < 981) {
       document.getElementById('about-image')?.classList.add('show-about-us');
     }
-    if (!document.getElementById('tour-cutout')?.classList.contains('show-tour-cutout') && tourCutoutCont && tourCutoutCont?.getBoundingClientRect().top < window.outerHeight && window.outerWidth  > 981) {
+    if (!document.getElementById('tour-cutout')?.classList.contains('show-tour-cutout') && tourCutoutCont && tourCutoutCont?.getBoundingClientRect().top < window.outerHeight && window.outerWidth < 981) {
       document.getElementById('tour-cutout')?.classList.add('show-tour-cutout');
     }
-    if (!document.getElementById('subscribe-cutout')?.classList.contains('show-subscribe-cutout') && subscribeCutoutCont && subscribeCutoutCont?.getBoundingClientRect().top < window.outerHeight && window.outerWidth  > 981) {
+    if (!document.getElementById('subscribe-cutout')?.classList.contains('show-subscribe-cutout') && subscribeCutoutCont && subscribeCutoutCont?.getBoundingClientRect().top < window.outerHeight && window.outerWidth < 981) {
       document.getElementById('subscribe-cutout')?.classList.add('show-subscribe-cutout');
     }
 
