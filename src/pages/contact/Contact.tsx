@@ -43,7 +43,7 @@ class Contact extends React.Component {
                             <div id="mc_embed_signup">
                                     <form action="https://rocketmail.us12.list-manage.com/subscribe/post?u=8e98a9f024fef4745f3140246&amp;id=bf5953691d&amp;f_id=0062b8e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank">
                                         <div id="mc_embed_signup_scroll">
-                                            <h2>Get the best Japa Offers Now!</h2>
+                                            <h2>Get the best travel offers now!</h2>
                                             <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
                                             <div className="mc-field-group">
                                                 <label htmlFor="mce-EMAIL">Email Address <span className="asterisk">*</span></label>

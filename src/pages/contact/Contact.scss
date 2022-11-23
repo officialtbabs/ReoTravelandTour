@@ -107,7 +107,7 @@
     overflow: clip;
 
     .subscribe-cutout {
-        font-size: 21.7vw;
+        font-size: 15vw;
         font-weight: 800;
         line-height: 1em;
         text-align: start;
@@ -132,6 +132,6 @@
     }                
     100% {                    
         opacity: 1;                    
-        transform: translateX(0);               
+        transform: translateX(12vw);               
     }            
 } 
