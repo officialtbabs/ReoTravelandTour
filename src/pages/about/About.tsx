@@ -27,6 +27,7 @@ class About extends React.Component {
                         <Cards name="Hotel Bookings" image="hotel-booking.jpg" desc="Want a soft landing with readily available hotels, apartments or travel homes? We are your goto support. We provide the following; Hotel booking: Any location all over the world. Shortlet Booking: Lagos and Abuja."/>
                         <Cards name="Event Planning" image="event-planning.jpg" desc="Worry less about leaving a long lasting impression through memorable occasion, we got you covered! We offer the following event planning services: Company bonding, Weekend vacation, Anniversary and Birthday Get away."/>
                         <Cards name="Group Packages" image="group.jpg" desc="We offer local and international group packages to explore new culture, network, engage and most importantly have a good time out with family and friends."/>
+                        <Cards name="Application for Travel Insurance" image="insurance.jpg" desc="Travel insurance is a fantastic method to safeguard all of your travel plans and receive reimbursement for any injuries or other problems that might arise. We can assist you in finding the best travel insurance."/>
                     </div>
                     <div className="tour-container">
                         <div id="tour-cutout" className="tour-cutout">
