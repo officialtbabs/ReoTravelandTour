@@ -36,7 +36,7 @@ class Contact extends React.Component {
                         <div className="subscribe-form-container">
                             <div className="subscribe-container">
                                 <div id="subscribe-cutout" className="subscribe-cutout">
-                                    Subscribe
+                                    Be the first to know of amazing offers
                                 </div>
                             </div>
                             <div className="subscribe-form-content">
